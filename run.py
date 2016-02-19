@@ -151,8 +151,8 @@ if __name__ == '__main__':
         v, theta = pod.calcNewGlobalVel(v, theta)
 
         if cur_time - change_time > 17:
-            v = np.transpose(np.matrix([np.random.randint(-40, 40) * fps_limit,
-                                        np.random.randint(-40, 40) * fps_limit]))
+            v = np.transpose(np.matrix([np.random.randint(-40, 40) / fps_limit,
+                                        np.random.randint(-40, 40) / fps_limit]))
             theta = np.pi / (np.random.rand() * fps_limit)
             change_time = cur_time
         # only run for 1 minute
