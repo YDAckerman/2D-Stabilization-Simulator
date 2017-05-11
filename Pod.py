@@ -42,7 +42,7 @@ class Pod(object):
         )
         
         # J is the moment of inertia matrix (needed to be
-        ## calculated out by hand)
+        # calculated out by hand)
         J = np.identity(3) * m * np.power(body_l, 2) / 6
 
         # M is the mass matrix
